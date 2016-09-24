@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name bigConnection)(type KiCad)(uri "$(KIPRJMOD)/bigConnection.pretty")(options "")(descr ""))
+)

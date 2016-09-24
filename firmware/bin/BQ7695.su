@@ -1,0 +1,9 @@
+BQ7695.c:8:9:BQ7695_set_cell	8	static
+BQ7695.c:20:9:BQ7695_disable_unecessary	16	static
+BQ7695.c:28:8:BQ7695_read_offset_corr	24	static
+BQ7695.c:82:8:BQ7695_read_gain_corr	16	static
+BQ7695.c:124:9:BQ7695_read_status	8	static
+BQ7695.c:129:6:BQ7695_over_current	8	static
+BQ7695.c:141:6:BQ7695_read_cells	16	static
+BQ7695.c:149:6:BQ7695_read_current	8	static
+BQ7695.c:155:6:BQ7695_setup_corrections	24	static

@@ -1,0 +1,219 @@
+
+bin/BCM.elf:     file format elf32-littlearm
+bin/BCM.elf
+architecture: arm, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x000000c1
+
+Program Header:
+0x70000001 off    0x00009f00 vaddr 0x00001f00 paddr 0x00001f00 align 2**2
+         filesz 0x00000008 memsz 0x00000008 flags r--
+    LOAD off    0x00008000 vaddr 0x00000000 paddr 0x00000000 align 2**15
+         filesz 0x00001f08 memsz 0x00001f08 flags r-x
+    LOAD off    0x00010100 vaddr 0x10000100 paddr 0x00001f08 align 2**15
+         filesz 0x00000020 memsz 0x000000ac flags rw-
+private flags = 5000202: [Version5 EABI] [soft-float ABI] [has entry point]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00001f00  00000000  00000000  00008000  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .ARM.exidx    00000008  00001f00  00001f00  00009f00  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .data         00000020  10000100  00001f08  00010100  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+  3 .bss          0000008c  10000120  00001f28  00010120  2**2
+                  ALLOC
+  4 .heap         00001000  100001b0  100001b0  00010120  2**3
+                  CONTENTS, READONLY
+  5 .stack_dummy  00000200  100001b0  100001b0  00011120  2**3
+                  CONTENTS, READONLY
+  6 .ARM.attributes 0000002d  00000000  00000000  00011320  2**0
+                  CONTENTS, READONLY
+  7 .comment      00000070  00000000  00000000  0001134d  2**0
+                  CONTENTS, READONLY
+  8 .debug_line   000031af  00000000  00000000  000113bd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_info   0000832e  00000000  00000000  0001456c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_abbrev 00001bd3  00000000  00000000  0001c89a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_aranges 00000458  00000000  00000000  0001e470  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000007b0  00000000  00000000  0001e8c8  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_loc    0000293e  00000000  00000000  0001f078  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_macro  000017ce  00000000  00000000  000219b6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .debug_str    0000d491  00000000  00000000  00023184  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 16 .debug_frame  00000c2c  00000000  00000000  00030618  2**2
+                  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .text	00000000 .text
+00001f00 l    d  .ARM.exidx	00000000 .ARM.exidx
+10000100 l    d  .data	00000000 .data
+10000120 l    d  .bss	00000000 .bss
+100001b0 l    d  .heap	00000000 .heap
+100001b0 l    d  .stack_dummy	00000000 .stack_dummy
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 bin/startup_LPC11xx.o
+00000200 l       *ABS*	00000000 Stack_Size
+00001000 l       *ABS*	00000000 Heap_Size
+00000000 l    df *ABS*	00000000 adc_11xx.c
+00000000 l    df *ABS*	00000000 chip_11xx.c
+00000000 l    df *ABS*	00000000 clock_11xx.c
+00001ddc l     O .text	00000040 wdtOSCRate
+00000000 l    df *ABS*	00000000 gpio_11xx_2.c
+00000000 l    df *ABS*	00000000 i2c_11xx.c
+10000100 l     O .data	0000001c i2c
+10000120 l     O .bss	00000028 i2c_slave
+00000000 l    df *ABS*	00000000 sysctl_11xx.c
+00000000 l    df *ABS*	00000000 uart_11xx.c
+00000000 l    df *ABS*	00000000 util.c
+00001e1c l     O .text	00000011 digits.4175
+00000000 l    df *ABS*	00000000 board.c
+10000148 l     O .bss	00000008 adc_setup
+10000150 l     O .bss	00000020 str.6443
+00000000 l    df *ABS*	00000000 BQ7695.c
+00000000 l    df *ABS*	00000000 main.c
+10000170 l     O .bss	00000007 oc
+10000177 l     O .bss	00000008 uart_rx_buffer
+10000180 l     O .bss	00000004 lastPrint
+10000184 l     O .bss	00000010 cellVolts
+10000194 l     O .bss	00000007 gc
+00000000 l    df *ABS*	00000000 sysinit.c
+00000000 l    df *ABS*	00000000 _udivsi3.o
+00000dd4 l       .text	00000000 .udivsi3_skip_div0_test
+00000000 l    df *ABS*	00000000 _divsi3.o
+00000ef4 l       .text	00000000 .divsi3_skip_div0_test
+00000000 l    df *ABS*	00000000 _dvmd_tls.o
+00000000 l    df *ABS*	00000000 divdf3.c
+00000000 l    df *ABS*	00000000 muldf3.c
+00000000 l    df *ABS*	00000000 fixdfsi.c
+00000000 l    df *ABS*	00000000 floatsidf.c
+00000000 l    df *ABS*	00000000 _clzsi2.o
+00000000 l    df *ABS*	00000000 strlen.c
+00000000 l    df *ABS*	00000000 
+00001f08 l       .ARM.exidx	00000000 __exidx_end
+00001f08 l       .ARM.exidx	00000000 __etext
+00001f00 l       .text	00000000 __exidx_start
+100001b0 g       .heap	00001000 __HeapBase
+000000da  w    F .text	00000002 TIMER16_0_IRQHandler
+10000100 g       .data	00000000 __data_start__
+00000894 g     F .text	0000001a Board_LEDs_Init
+000000d2  w    F .text	00000002 HardFault_Handler
+000002f8 g     F .text	000000d4 handleMasterXferState
+00000828 g     F .text	00000010 SysTick_Handler
+00000770 g     F .text	00000038 Chip_UART_SetBaud
+000000d6  w    F .text	00000002 PendSV_Handler
+000000d0  w    F .text	00000002 NMI_Handler
+00000298 g     F .text	00000014 Chip_Clock_GetSystemClockRate
+000000da  w    F .text	00000002 UART_IRQHandler
+000000da  w    F .text	00000002 TIMER32_0_IRQHandler
+000005e8 g     F .text	00000028 Chip_I2C_MasterSend
+0000058c g     F .text	0000005c Chip_I2C_MasterTransfer
+000000da  w    F .text	00000002 TIMER32_1_IRQHandler
+00000940 g     F .text	00000014 Board_UART_SendBlocking
+00000654 g     F .text	00000020 Chip_I2C_MasterStateHandler
+1000011c g     O .data	00000004 SystemCoreClock
+000006f0 g     F .text	00000028 Chip_UART_Init
+00000dd4 g     F .text	0000010a .hidden __udivsi3
+100011b0 g       .heap	00000000 __HeapLimit
+10000120 g       .bss	00000000 __bss_start__
+000007bc g     F .text	0000006c itoa
+00000574 g     F .text	00000018 Chip_I2C_SetMasterEventHandler
+00000224 g     F .text	00000028 Chip_Clock_GetSystemPLLInClockRate
+000000da  w    F .text	00000002 PIOINT1_IRQHandler
+000007a8 g     F .text	00000014 __reverse
+00000900 g     F .text	00000014 Board_UART_Println
+00000838 g     F .text	00000014 CAN_IRQHandler
+00000458 g     F .text	000000be handleSlaveXferState
+00000a24 g     F .text	0000002c BQ7695_disable_unecessary
+000010d8 g     F .text	00000648 .hidden __aeabi_ddiv
+000000da  w    F .text	00000002 SSP0_IRQHandler
+00001720 g     F .text	00000534 .hidden __aeabi_dmul
+000000dc g     F .text	00000014 setStartMode
+000001c4 g     F .text	00000028 Chip_ADC_EnableChannel
+000000c0 g     F .text	00000010 Reset_Handler
+00000264 g     F .text	00000034 Chip_Clock_GetMainClockRate
+00000550 g     F .text	00000024 Chip_I2C_SetClockRate
+00000150 g     F .text	00000016 Chip_ADC_ReadValue
+0000019c g     F .text	00000028 Chip_ADC_SetStartMode
+00000518 g     F .text	00000038 Chip_I2C_Init
+00000ef4 g     F .text	00000000 .hidden __aeabi_idiv
+10000120 g       .data	00000000 __data_end__
+000003cc g     F .text	0000008c getSlaveIndex
+00001d38 g     F .text	0000003c .hidden __clzsi2
+100001ac g       .bss	00000000 __bss_end__
+000000da  w    F .text	00000002 TIMER16_1_IRQHandler
+00000166 g     F .text	00000034 Chip_ADC_ReadStatus
+000000da g     F .text	00000002 Default_Handler
+000002bc g     F .text	00000028 Chip_GPIO_WriteDirBit
+100001a0 g     O .bss	00000001 tx
+00000a50 g     F .text	000000b0 BQ7695_read_offset_corr
+000009ec g     F .text	00000038 BQ7695_set_cell
+000002ac g     F .text	00000010 Chip_GPIO_Init
+000000da  w    F .text	00000002 ADC_IRQHandler
+00001e30 g     O .text	00000004 OscRateIn
+0000096c g     F .text	00000054 Board_I2C_Init
+000000da  w    F .text	00000002 SSP1_IRQHandler
+000000da  w    F .text	00000002 PIOINT2_IRQHandler
+00000638 g     F .text	0000001c Chip_I2C_IsMasterActive
+00001cc0 g     F .text	00000078 .hidden __aeabi_i2d
+000010d4  w    F .text	00000002 .hidden __aeabi_ldiv0
+00000914 g     F .text	0000002c Board_UART_PrintNum
+000000da  w    F .text	00000002 BOD_IRQHandler
+000008e8 g     F .text	00000018 Board_UART_Print
+000000da  w    F .text	00000002 WAKEUP_IRQHandler
+00000718 g     F .text	0000001a Chip_UART_Send
+0000024c g     F .text	00000018 Chip_Clock_GetSystemPLLOutClockRate
+000000da  w    F .text	00000002 PIOINT0_IRQHandler
+100001a1 g     O .bss	0000000a rx_buf
+00000bfe g     F .text	0000001a I2C_IRQHandler
+00000000 g       .text	000000c0 __isr_vector
+00000c18 g     F .text	00000130 main
+00000756 g     F .text	0000001a Chip_UART_Read
+000000da  w    F .text	00000002 WDT_IRQHandler
+00000dd4 g     F .text	00000000 .hidden __aeabi_uidiv
+000000d4  w    F .text	00000002 SVC_Handler
+100001b0 g       .heap	00000000 __end__
+00000ef4 g     F .text	000001cc .hidden __divsi3
+00000d48 g     F .text	0000008c SystemInit
+00000954 g     F .text	00000018 Board_UART_Read
+000001fc g     F .text	00000028 Chip_Clock_GetWDTOSCRate
+00000732 g     F .text	00000024 Chip_UART_SendBlocking
+000000f0 g     F .text	00000060 Chip_ADC_Init
+000006d0 g     F .text	00000020 Chip_SYSCTL_PowerUp
+10002000 g       *ABS*	00000000 __StackTop
+1000019c g     O .bss	00000004 msTicks
+00000ee0 g     F .text	00000012 .hidden __aeabi_uidivmod
+000009c0 g     F .text	0000002c Board_ADC_Init
+000002e4 g     F .text	00000014 Chip_I2C_EventHandler
+10001e00 g       *ABS*	00000200 __StackLimit
+00000610 g     F .text	00000028 Chip_I2C_MasterRead
+000001ec g     F .text	00000010 SystemCoreClockUpdate
+00000bdc g     F .text	00000022 BQ7695_setup_corrections
+00001c54 g     F .text	0000006c .hidden __aeabi_d2iz
+000010d4  w    F .text	00000002 .hidden __aeabi_idiv0
+000000da  w    F .text	00000002 PIOINT3_IRQHandler
+00000b9c g     F .text	00000040 BQ7695_read_cells
+00001d74 g     F .text	00000068 strlen
+00000b00 g     F .text	0000009c BQ7695_read_gain_corr
+0000084c g     F .text	00000048 Board_SysTick_Init
+000010c0 g     F .text	00000012 .hidden __aeabi_idivmod
+00000674 g     F .text	0000005c Chip_I2C_SlaveStateHandler
+000008b0 g     F .text	00000038 Board_UART_Init
+
+
